@@ -1,0 +1,14 @@
+name: Feature idea
+description: Suggest an improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zuntrio focuses on fast, predictable keyboard window management. New features are collected and prioritised after the core is stable.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Zuntrio to do, and why?
+    validations:
+      required: true

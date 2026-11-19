@@ -1,0 +1,47 @@
+name: Bug report
+description: A window didn't move as expected, or Zuntrio misbehaved
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please don't include window titles, document names or other personal information.
+  - type: input
+    id: version
+    attributes:
+      label: Zuntrio version
+      description: Menu-bar icon → About Zuntrio
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac
+      placeholder: "e.g. macOS 15.3, MacBook Air M2 / Intel iMac"
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App whose window was affected
+      placeholder: "e.g. Safari 19"
+  - type: input
+    id: action
+    attributes:
+      label: Action and shortcut
+      placeholder: "e.g. Left Half (⌥⌘←)"
+  - type: input
+    id: last
+    attributes:
+      label: Text of the menu's "Last:" line after the action
+  - type: textarea
+    id: displays
+    attributes:
+      label: Display setup
+      placeholder: "e.g. built-in Retina + external 4K to the left; Stage Manager on/off"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
