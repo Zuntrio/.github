@@ -33,7 +33,7 @@ body:
   - type: input
     id: last
     attributes:
-      label: Text of the menu's "Last:" line after the action
+      label: The result line near the bottom of the Zuntrio menu after the action
   - type: textarea
     id: displays
     attributes:
