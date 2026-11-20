@@ -2,22 +2,38 @@ name: Compatibility report
 description: Tell us Zuntrio works (or doesn't) on your macOS version, Mac or app
 labels: [compatibility]
 body:
-  - type: input
-    id: version
+  - type: markdown
     attributes:
-      label: Zuntrio version
+      value: |
+        Thanks! Reports like this decide which Macs, macOS versions and apps we can list as tested.
+        Please don't include window titles, document names or other personal information.
+  - type: dropdown
+    id: result
+    attributes:
+      label: Overall result
+      options:
+        - Everything I tried works
+        - Some things don't work
+        - Zuntrio doesn't work at all
     validations:
       required: true
-  - type: input
-    id: macos
+  - type: textarea
+    id: diagnostics
     attributes:
-      label: macOS version and Mac (Apple Silicon or Intel)
+      label: Diagnostics
+      description: "Zuntrio menu → Copy Diagnostics… (0.1.0 beta 2 or later), then paste here. It contains no personal data. On older versions, enter the Zuntrio version, macOS version and Mac model instead."
+      render: text
     validations:
       required: true
   - type: textarea
     id: results
     attributes:
       label: What you tried and the result
-      placeholder: "e.g. halves, maximize, next display in Safari, Notes, Xcode: all OK"
+      placeholder: "e.g. halves, maximize, next display in Safari, Notes, Xcode: all OK. Thirds don't work in Figma."
     validations:
       required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Anything special about your setup
+      placeholder: "e.g. Stage Manager on, three displays, a display above the built-in screen"

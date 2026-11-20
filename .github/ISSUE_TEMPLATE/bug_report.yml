@@ -45,3 +45,9 @@ body:
       label: What happened, and what you expected
     validations:
       required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: "Zuntrio menu → Copy Diagnostics… (0.1.0 beta 2 or later), then paste here. It contains no personal data and includes the macOS version, Mac model, display setup and the last result."
+      render: text
